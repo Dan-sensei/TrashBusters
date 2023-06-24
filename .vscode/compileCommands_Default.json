@@ -1,0 +1,106 @@
+[
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TP_PickUpComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TP_PickUpComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TP_WeaponComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TP_WeaponComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBusters.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBusters.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBusters.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBustersCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBustersCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBustersGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBustersGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBustersProjectile.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "G:\\Unrial\\TrashBusters\\Source\\TrashBusters\\TrashBustersProjectile.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\Unrial\\TrashBusters\\.vscode\\compileCommands_Default\\TrashBusters.261.rsp"
+		],
+		"directory": "G:\\Epic Games\\UE_5.2\\Engine\\Source"
+	}
+]

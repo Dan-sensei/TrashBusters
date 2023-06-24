@@ -1,0 +1,437 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "TrashBusters Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Debug",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Debug",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TrashBusters Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Debug",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"DebugGame",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"DebugGame",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TrashBusters Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"DebugGame",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Development",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Development",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TrashBusters Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Development",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Test",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Test",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TrashBusters Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Test",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Shipping",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Shipping",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TrashBusters Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBusters Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TrashBusters",
+				"Win64",
+				"Shipping",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"Debug",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"Debug",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TrashBustersEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"Debug",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"DebugGame",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"DebugGame",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TrashBustersEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"DebugGame",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"Development",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"Development",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TrashBustersEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"label": "TrashBustersEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TrashBustersEditor",
+				"Win64",
+				"Development",
+				"G:\\Unrial\\TrashBusters\\TrashBusters.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "G:\\Epic Games\\UE_5.2"
+			}
+		}
+	]
+}
