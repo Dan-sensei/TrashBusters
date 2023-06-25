@@ -7,6 +7,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "PickableTrashComponent.h"
+#include "MoneySystem.h"
 
 ATrashBustersCharacter::ATrashBustersCharacter()
 {
@@ -99,9 +100,13 @@ void ATrashBustersCharacter::CleanTrash()
         default: break;
         }
 
-        // TODO: increment score
+        AMoneySystem* levelScript = Cast<AMoneySystem>(GetWorld()->GetLevelScriptActor());
 
-        hitActor->Destroy();
+        if (levelScript)
+        {
+            levelScript->IncreaseBalance(score);
+        }
+            hitActor->Destroy();
       }
     }
   }

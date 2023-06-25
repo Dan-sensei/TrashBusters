@@ -8,5 +8,5 @@ AMoneySystem::AMoneySystem ():Balance(0.f){
 
 void AMoneySystem::IncreaseBalance(float increase){
     Balance += increase;
-    if(HUD) HUD->setBalance(Balance);
+    HUD->setBalance(Balance);
 }
