@@ -43,11 +43,8 @@ void ATrashBustersCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
     {
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
-
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ATrashBustersCharacter::Move);
-
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ATrashBustersCharacter::Look);
-
         EnhancedInputComponent->BindAction(CleanAction, ETriggerEvent::Triggered, this, &ATrashBustersCharacter::CleanTrash);
     }
 }
