@@ -11,8 +11,10 @@ class UInputComponent;
 class USkeletalMeshComponent;
 class USceneComponent;
 class UCameraComponent;
+class UInventoryComponent;
 class UAnimMontage;
 class USoundBase;
+class UGameHUD;
 
 UCLASS(config=Game)
 class ATrashBustersCharacter : public ACharacter
@@ -26,6 +28,9 @@ class ATrashBustersCharacter : public ACharacter
     /** First person camera */
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera, meta=(AllowPrivateAccess="true"))
     UCameraComponent* FirstPersonCameraComponent;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Inventory, meta=(AllowPrivateAccess="true"))
+    UInventoryComponent* InventoryComponent;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess="true"))
     class UInputMappingContext* DefaultMappingContext;
@@ -54,7 +59,9 @@ public:
 
     UFUNCTION(BlueprintImplementableEvent, Category = "Money")
     void DestroyActorWithAnimation(AActor* target);
-
+    UFUNCTION(BlueprintCALLABLE, Category = "HUD")
+    void SetHUD(UGameHUD* hud);
+    
 protected:
     virtual void BeginPlay();
     virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;

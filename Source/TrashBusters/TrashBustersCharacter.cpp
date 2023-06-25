@@ -7,7 +7,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "PickableTrashComponent.h"
-#include "MoneySystem.h"
+#include "InventoryComponent.h"
 
 ATrashBustersCharacter::ATrashBustersCharacter()
 {
@@ -19,6 +19,9 @@ ATrashBustersCharacter::ATrashBustersCharacter()
     FirstPersonCameraComponent->SetupAttachment(GetCapsuleComponent());
     FirstPersonCameraComponent->SetRelativeLocation(FVector(-10.f, 0.f, 60.f)); // Position the camera
     FirstPersonCameraComponent->bUsePawnControlRotation = true;
+
+    // Create Inventory Component
+    InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("Inventory"));
 }
 
 void ATrashBustersCharacter::BeginPlay()
@@ -74,6 +77,9 @@ void ATrashBustersCharacter::Look(const FInputActionValue& Value)
 
 void ATrashBustersCharacter::CleanTrash()
 {
+    if(!InventoryComponent->CanPickUp()) {
+        return;
+    }
     FHitResult HitResult;
     FVector StartLocation = GetActorLocation();
     FVector EndLocation = StartLocation + GetActorForwardVector() * CleanDistance;
@@ -93,13 +99,14 @@ void ATrashBustersCharacter::CleanTrash()
             }
 
             float score = pickableTrashComponent->GetScore();
-            if (AMoneySystem* levelScript = Cast<AMoneySystem>(world->GetLevelScriptActor()))
-            {
-                levelScript->IncreaseBalance(score);
-            }
-
+            InventoryComponent->IncreaseBalance(score);
+            InventoryComponent->IncreaseTrashCount();
             pickableTrashComponent->Deactivate();
             DestroyActorWithAnimation(hitActor);
         }
     }
+}
+
+void ATrashBustersCharacter::SetHUD(UGameHUD* hud){
+    InventoryComponent->SetHUD(hud);
 }
