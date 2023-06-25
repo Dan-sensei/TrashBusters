@@ -14,6 +14,3 @@ class ATrashBustersGameMode : public AGameModeBase
 public:
 	ATrashBustersGameMode();
 };
-
-
-
