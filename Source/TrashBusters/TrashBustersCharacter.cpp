@@ -74,9 +74,11 @@ void ATrashBustersCharacter::Look(const FInputActionValue& Value)
 
 void ATrashBustersCharacter::CleanTrash()
 {
-    if(!InventoryComponent->CanPickUp()) {
+    if(!InventoryComponent->CanPickUp())
+    {
         return;
     }
+
     FHitResult HitResult;
     FVector StartLocation = GetActorLocation();
     FVector EndLocation = StartLocation + GetActorForwardVector() * CleanDistance;
