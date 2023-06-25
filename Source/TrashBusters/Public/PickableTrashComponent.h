@@ -9,20 +9,24 @@
 UENUM(BlueprintType)
 enum class TrashType : uint8
 {
-  TrashType_PlasticBottle,
-  TrashType_GlassBottle,
-  TrashType_Paper,
-  TrashType_SodaCan,
+    TrashType_SodaCan,
+    TrashType_PlasticBottle,
+    TrashType_GlassBottle,
+    TrashType_Paper
 };
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class TRASHBUSTERS_API UPickableTrashComponent : public UActorComponent
 {
-  GENERATED_BODY()
+    GENERATED_BODY()
 
-public:	
-  UPickableTrashComponent();
+public:
+    UPickableTrashComponent();
+    inline TrashType GetTrashType() const { return bTrashType; }
+    float GetScore() const;
 
-  UPROPERTY(EditAnywhere, BlueprintReadWrite)
-  TrashType bTrashType;
+protected:
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    TrashType bTrashType = TrashType::TrashType_SodaCan;
+
 };

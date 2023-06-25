@@ -17,51 +17,51 @@ class USoundBase;
 UCLASS(config=Game)
 class ATrashBustersCharacter : public ACharacter
 {
-  GENERATED_BODY()
+    GENERATED_BODY()
 
-  /** Pawn mesh: 1st person view (arms; seen only by self) */
-  UPROPERTY(VisibleDefaultsOnly, Category=Mesh)
-  USkeletalMeshComponent* Mesh1P;
+    /** Pawn mesh: 1st person view (arms; seen only by self) */
+    UPROPERTY(VisibleDefaultsOnly, Category=Mesh)
+    USkeletalMeshComponent* Mesh1P;
 
-  /** First person camera */
-  UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-  UCameraComponent* FirstPersonCameraComponent;
+    /** First person camera */
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera, meta=(AllowPrivateAccess="true"))
+    UCameraComponent* FirstPersonCameraComponent;
 
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-  class UInputMappingContext* DefaultMappingContext;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess="true"))
+    class UInputMappingContext* DefaultMappingContext;
 
-  /** ACTIONS */
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-  class UInputAction* JumpAction;
+    /** ACTIONS */
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess="true"))
+    class UInputAction* JumpAction;
 
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-  class UInputAction* MoveAction;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess="true"))
+    class UInputAction* MoveAction;
 
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
-  class UInputAction* LookAction;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess="true"))
+    class UInputAction* LookAction;
 
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
-  class UInputAction* CleanAction;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess="true"))
+    class UInputAction* CleanAction;
 
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Cleaning, meta = (AllowPrivateAccess = "true"))
-  float CleanDistance = 100.0;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Cleaning, meta=(AllowPrivateAccess="true"))
+    float CleanDistance = 100.0;
 
-  USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
-  UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
+    USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
+    UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
 public:
-  ATrashBustersCharacter();
+    ATrashBustersCharacter();
 
-  UFUNCTION(BlueprintImplementableEvent, Category = "Money")
-	void destroyActorWithAnimation(AActor* target);
+    UFUNCTION(BlueprintImplementableEvent, Category = "Money")
+    void DestroyActorWithAnimation(AActor* target);
 
 protected:
-  virtual void BeginPlay();
-  virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
+    virtual void BeginPlay();
+    virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
-  void Move(const FInputActionValue& Value);
-  void Look(const FInputActionValue& Value);
-  void CleanTrash();
+    void Move(const FInputActionValue& Value);
+    void Look(const FInputActionValue& Value);
+    void CleanTrash();
 
 };
 
