@@ -52,6 +52,9 @@ class ATrashBustersCharacter : public ACharacter
 public:
   ATrashBustersCharacter();
 
+  UFUNCTION(BlueprintImplementableEvent, Category = "Money")
+	void destroyActorWithAnimation(AActor* target);
+
 protected:
   virtual void BeginPlay();
   virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;

@@ -88,9 +88,13 @@ void ATrashBustersCharacter::CleanTrash()
     {
       if (UPickableTrashComponent* pickableTrashComponent = Cast<UPickableTrashComponent>(hitActor->GetComponentByClass(UPickableTrashComponent::StaticClass())))
       {
+        if(!pickableTrashComponent->IsActive())
+        {
+          return;
+        }
         TrashType type = pickableTrashComponent->bTrashType;
         
-        float score;
+        float score = 0.f;
         switch (type)
         {
         case TrashType::TrashType_SodaCan:
@@ -100,13 +104,15 @@ void ATrashBustersCharacter::CleanTrash()
         default: break;
         }
 
+        pickableTrashComponent->Deactivate();
         AMoneySystem* levelScript = Cast<AMoneySystem>(GetWorld()->GetLevelScriptActor());
 
         if (levelScript)
         {
             levelScript->IncreaseBalance(score);
         }
-            hitActor->Destroy();
+        destroyActorWithAnimation(hitActor);
+        //GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Some debug message!"));
       }
     }
   }
