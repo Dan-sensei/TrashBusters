@@ -79,9 +79,14 @@ void ATrashBustersCharacter::CleanTrash()
         return;
     }
 
+    if (FirstPersonCameraComponent == nullptr)
+    {
+        return;
+    }
+
     FHitResult HitResult;
-    FVector StartLocation = GetActorLocation();
-    FVector EndLocation = StartLocation + GetActorForwardVector() * CleanDistance;
+    FVector StartLocation = FirstPersonCameraComponent->K2_GetComponentLocation();
+    FVector EndLocation = StartLocation + (FirstPersonCameraComponent->GetForwardVector() * CleanDistance);
     FCollisionQueryParams TraceParams(FName(TEXT("Raycast")), false, this);
 
     UWorld* world = GetWorld();
