@@ -110,7 +110,3 @@ void ATrashBustersCharacter::CleanTrash()
         }
     }
 }
-
-void ATrashBustersCharacter::SetHUD(UGameHUD* hud){
-    InventoryComponent->SetHUD(hud);
-}

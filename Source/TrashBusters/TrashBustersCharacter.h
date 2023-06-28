@@ -60,7 +60,7 @@ public:
     UFUNCTION(BlueprintImplementableEvent, Category = "Money")
     void DestroyActorWithAnimation(AActor* target);
     UFUNCTION(BlueprintCALLABLE, Category = "HUD")
-    void SetHUD(UGameHUD* hud);
+    void SetHUD(UGameHUD* hud) { InventoryComponent->SetHUD(hud); }
     
 protected:
     virtual void BeginPlay();
